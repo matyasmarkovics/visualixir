@@ -6,7 +6,8 @@ defmodule VisualixirWeb.UserSocket do
   channel "nodes", VisualixirWeb.NodesChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
+  transport :websocket, Phoenix.Transports.WebSocket,
+    check_origin: false
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
