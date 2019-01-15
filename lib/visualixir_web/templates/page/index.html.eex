@@ -10,6 +10,7 @@
 
     <div id="controls">
       <button id="stop_msg_tracing">Stop Msg Tracing</button>
+      <button id="save_msg_seq">Save Msg Sequence</button>
     </div>
 
     <div id="legend">

@@ -36,7 +36,7 @@ defmodule Visualixir.Tracer do
   #
 
   def init([visualizer_node]) do
-    :erlang.trace(:all, true, [:procs])
+    :erlang.trace(:all, true, [:procs, :set_on_spawn])
 
     {:ok, visualizer_node}
   end

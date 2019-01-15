@@ -1,4 +1,4 @@
-const fade_time = 4000, // msec
+const fade_time = 0, // msec, make diagram static
       max_msg_length = 60,
       max_pid_length = 30;
 
@@ -9,6 +9,7 @@ export default class {
 
     this.container
       .append("svg")
+      .attr("xmlns", "http://www.w3.org/2000/svg")
       .attr("width", "100%")
       .attr("height", "100%")
       .call(this.msg_seq);

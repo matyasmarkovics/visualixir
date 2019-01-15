@@ -12,6 +12,10 @@ class App {
       if (this.node_view)
         this.node_view.stopMsgTraceAll();
     });
+    $('#save_msg_seq').click(e => {
+      if (this.node_view)
+        this.node_view.saveMsgSeq();
+    });
   }
 
   // this should go away when the frontend supports watching multiple nodes
