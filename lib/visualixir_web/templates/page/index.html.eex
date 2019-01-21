@@ -40,5 +40,8 @@
       <div id="log"></div>
   </div>
   <div id="msg_seq"></div>
+  <div id="controls">
+    <button id="save_msg_seq">Save Msg Sequence</button>
+  </div>
 </body>
 </html>

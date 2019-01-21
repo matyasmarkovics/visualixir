@@ -108,21 +108,7 @@ export default class {
     this.graph.stopMsgTraceAll();
     this.graph.update(false);
   }
-
-  function saveMsgSeq() {
-    var name = $.filter(this.pids, (pid, info) => info.traced == true).first().name;
-    var svgData = $('#msg_seq svg').outerHTML;
-    var preface = '<?xml version="1.0" standalone="no"?>\r\n';
-    var svgBlob = new Blob([preface, svgData], {type:"image/svg+xml;charset=utf-8"});
-    var svgUrl = URL.createObjectURL(svgBlob);
-    var downloadLink = document.createElement("a");
-    downloadLink.href = svgUrl;
-    downloadLink.download = this.node + name + ".svg";
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-  }
-
+  
   cleanup() {
     this.channel.leave();
   }

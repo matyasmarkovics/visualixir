@@ -14,7 +14,7 @@ class App {
     });
     $('#save_msg_seq').click(e => {
       if (this.node_view)
-        this.node_view.saveMsgSeq();
+        this.node_view.msg_seq.saveMsgSeq();
     });
   }
 
